@@ -1,0 +1,40 @@
+﻿<Window x:Class="SpaceColonization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceColonization"
+        mc:Ignorable="d"
+        Title="SpaceColonization" Height="720" Width="1280" ResizeMode="NoResize">
+    <Grid>
+		<TabControl Name="tabDetailView" Margin="0,0,640,0">
+			<TabItem Header="Colony view">
+				<Canvas>
+					<Label Name="lblColony" Content="Colony: Brussels"/>
+				</Canvas>
+			</TabItem>
+			<TabItem Header="Planet view">
+				<Canvas>
+					<Label Name="lblPlanet" Content="Planet: Earth"></Label>
+				</Canvas>
+			</TabItem>
+			<TabItem Header="System view">
+				<Canvas>
+					<Label Name="lblSystem" Content="System: Sol"></Label>
+				</Canvas>
+			</TabItem>
+			<TabItem Header="Galaxy view">
+				<Canvas>
+					<Label Name="lblGalaxy" Content="Galaxy: Milky way"></Label>
+					<ListBox Name="lsbSystems" Canvas.Top="26">
+						<ListBoxItem Content="Sol System"/>
+						<ListBoxItem Content=""/>
+					</ListBox>
+				</Canvas>
+			</TabItem>
+		</TabControl>
+		<Canvas Margin="640,0,0,0">
+			<Label Content="Hello World!"/>
+		</Canvas>
+    </Grid>
+</Window>
