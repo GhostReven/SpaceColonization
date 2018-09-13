@@ -16,25 +16,58 @@
 			<TabItem Header="Planet view">
 				<Canvas>
 					<Label Name="lblPlanet" Content="Planet: Earth"></Label>
+                    <ListBox Name="lsbPlanet" Canvas.Top="26">
+                        <ListBoxItem Content="Brussels"/>
+                        <ListBoxItem Content="Paris"/>
+                        <ListBoxItem Content="Berlin"/>
+                        <ListBoxItem Content="London"/>
+                        <ListBoxItem Content="Moscow"/>
+                        <ListBoxItem Content="Beijing"/>
+                        <ListBoxItem Content="Washington D.C."/>
+                        <ListBoxItem Content="New Delhi"/>
+                        <ListBoxItem Content="Tokyo"/>
+                    </ListBox>
 				</Canvas>
 			</TabItem>
 			<TabItem Header="System view">
 				<Canvas>
-					<Label Name="lblSystem" Content="System: Sol"></Label>
-				</Canvas>
+                    <Label Name="lblSystem" Content="System: Sol"/>
+                    <ListBox Name="lsbSystem" Canvas.Top="26">
+                        <ListBoxItem Content="Sol"/>
+                        <ListBoxItem Content="Mercury"/>
+                        <ListBoxItem Content="Venus"/>
+                        <ListBoxItem Content="Earth"/>
+                        <ListBoxItem Content="Mars"/>
+                        <ListBoxItem Content="Jupiter"/>
+                        <ListBoxItem Content="Saturn"/>
+                        <ListBoxItem Content="Uranus"/>
+                        <ListBoxItem Content="Neptune"/>
+                    </ListBox>
+                </Canvas>
 			</TabItem>
 			<TabItem Header="Galaxy view">
 				<Canvas>
-					<Label Name="lblGalaxy" Content="Galaxy: Milky way"></Label>
-					<ListBox Name="lsbSystems" Canvas.Top="26">
+                    <Label Name="lblGalaxy" Content="Galaxy: Milky way"/>
+                    <ListBox Name="lsbGalaxy" Canvas.Top="26">
 						<ListBoxItem Content="Sol System"/>
-						<ListBoxItem Content=""/>
-					</ListBox>
+						<ListBoxItem Content="Alpha Centauri"/>
+                        <ListBoxItem Content="Epsilon Eridani"/>
+                    </ListBox>
 				</Canvas>
 			</TabItem>
 		</TabControl>
-		<Canvas Margin="640,0,0,0">
-			<Label Content="Hello World!"/>
-		</Canvas>
+        <TabControl Margin="640,0,0,0">
+            <TabItem Header="Hello">
+                <Canvas>
+                    <Label Content="Hello"/>
+                </Canvas>
+            </TabItem>
+            <TabItem Header="World!">
+                <Canvas>
+                    <Label Content="World!"/>
+                </Canvas>
+            </TabItem>
+        </TabControl>
+        
     </Grid>
 </Window>
